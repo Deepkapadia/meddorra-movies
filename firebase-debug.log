@@ -1,0 +1,105 @@
+[debug] [2021-08-05T11:49:12.172Z] ----------------------------------------------------------------------
+[debug] [2021-08-05T11:49:12.173Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-08-05T11:49:12.177Z] CLI Version:   9.16.0
+[debug] [2021-08-05T11:49:12.177Z] Platform:      darwin
+[debug] [2021-08-05T11:49:12.177Z] Node Version:  v12.16.3
+[debug] [2021-08-05T11:49:12.178Z] Time:          Thu Aug 05 2021 17:19:12 GMT+0530 (India Standard Time)
+[debug] [2021-08-05T11:49:12.178Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-05T11:49:12.217Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-05T11:49:12.217Z] > authorizing via signed-in user (kapadia.deep12@gmail.com)
+[debug] [2021-08-05T11:49:12.218Z] [iam] checking project meddoraa-movies for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-05T11:49:12.219Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meddoraa-movies:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-05T11:49:13.845Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 05 Aug 2021 11:49:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1322","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-05T11:49:13.847Z] > refreshing access token with scopes: []
+[debug] [2021-08-05T11:49:13.847Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-05T11:49:14.049Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Thu, 05 Aug 2021 11:49:14 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-05T11:49:14.098Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/meddoraa-movies [none]
+[debug] [2021-08-05T11:49:14.562Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/meddoraa-movies 200
+[debug] [2021-08-05T11:49:14.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/meddoraa-movies {"projectId":"meddoraa-movies","projectNumber":"339067588988","displayName":"Meddoraa-Movies","name":"projects/meddoraa-movies","resources":{"hostingSite":"meddoraa-movies"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'meddoraa-movies'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-08-05T11:49:14.564Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-05T11:49:14.564Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-05T11:49:14.850Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 05 Aug 2021 11:49:15 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-05T11:49:14.897Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/meddoraa-movies/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-05T11:49:16.914Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 05 Aug 2021 11:49:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[meddoraa-movies]: beginning deploy... 
+[info] i  hosting[meddoraa-movies]: found 18 files in build 
+[debug] [2021-08-05T11:49:17.026Z] > refreshing access token with scopes: []
+[debug] [2021-08-05T11:49:17.026Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-05T11:49:17.028Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2021-08-05T11:49:17.028Z] [hosting][hash queue][FINAL] {"max":101,"min":6,"avg":13,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":106}
+[debug] [2021-08-05T11:49:17.344Z] <<< HTTP RESPONSE 200 {"date":"Thu, 05 Aug 2021 11:49:17 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-05T11:49:17.389Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/meddoraa-movies/versions/b77416309656c72a:populateFiles [none]
+[debug] [2021-08-05T11:49:17.390Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/meddoraa-movies/versions/b77416309656c72a:populateFiles {"files":{"/asset-manifest.json":"ec94033df0e81e32a71e9fed0721fca091edf5fb76468f51a1f2e8904bd1b45d","/favicon.ico":"b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955","/index.html":"868a2b03ad98a1325dde080a45002d5705992dd1d8be1d7a3d5e554d95a5983d","/logo192.png":"caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293","/manifest.json":"341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900","/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/logo512.png":"191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e","/static/css/main.1525edc2.chunk.css":"0cbdc7ad47afc4428e90997599d9f7d48a5e8cb2d154f85a22d8e302e3decd4b","/static/js/2.8e72fe76.chunk.js.LICENSE.txt":"7e9f379517e5cf970059dbbdba4f52f9a521f25402061abe0bb8ceb2ed48707c","/static/css/main.1525edc2.chunk.css.map":"a400abe823b0737610c858030b911f889ebc277245b450d163e9600791926b87","/static/js/3.c330222f.chunk.js":"be599352c06a4e2677ecff0e5a446eceb83fedc696908eb23b64dc5048ff6295","/static/js/main.ed4dbb81.chunk.js":"d0c288d8b9627b924787f075610bc6c6b5740b2267ab1f66ff56696001f78533","/static/js/3.c330222f.chunk.js.map":"908eb145feeb2fa771fc662fb187e45ccf36bc5441b80d8945ea065dfacdd704","/static/js/runtime-main.4ad3ed09.js":"7beefd011a9913ea455253d14ebe9055212b486d880c5b2a9e753052c7c37f36","/static/js/main.ed4dbb81.chunk.js.map":"960c6b61b38184bd3a0d87aa406c25bef73804c24387b6ebb1def6d73edac8d1","/static/js/runtime-main.4ad3ed09.js.map":"aa95b366d6d4f365c6fa8ec58713c163fb4c09089b60b57b19b3e95b95ec4430","/static/js/2.8e72fe76.chunk.js":"8fc47a7358e1c58d5fbbe6acca39fdbc08db72f11919a6ffeded0a7d20702c05","/static/js/2.8e72fe76.chunk.js.map":"bcf7da9a11f318cc62297dbe2826230a690455da24b239b4b14966d02706d014"}}
+[debug] [2021-08-05T11:49:19.271Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/meddoraa-movies/versions/b77416309656c72a:populateFiles 200
+[debug] [2021-08-05T11:49:19.271Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/meddoraa-movies/versions/b77416309656c72a:populateFiles {"uploadRequiredHashes":["bcf7da9a11f318cc62297dbe2826230a690455da24b239b4b14966d02706d014","8fc47a7358e1c58d5fbbe6acca39fdbc08db72f11919a6ffeded0a7d20702c05","ec94033df0e81e32a71e9fed0721fca091edf5fb76468f51a1f2e8904bd1b45d","d0c288d8b9627b924787f075610bc6c6b5740b2267ab1f66ff56696001f78533","960c6b61b38184bd3a0d87aa406c25bef73804c24387b6ebb1def6d73edac8d1","868a2b03ad98a1325dde080a45002d5705992dd1d8be1d7a3d5e554d95a5983d","908eb145feeb2fa771fc662fb187e45ccf36bc5441b80d8945ea065dfacdd704"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files"}
+[debug] [2021-08-05T11:49:19.273Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/bcf7da9a11f318cc62297dbe2826230a690455da24b239b4b14966d02706d014 [none]
+[debug] [2021-08-05T11:49:19.273Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/bcf7da9a11f318cc62297dbe2826230a690455da24b239b4b14966d02706d014 [stream]
+[debug] [2021-08-05T11:49:19.274Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/8fc47a7358e1c58d5fbbe6acca39fdbc08db72f11919a6ffeded0a7d20702c05 [none]
+[debug] [2021-08-05T11:49:19.274Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/8fc47a7358e1c58d5fbbe6acca39fdbc08db72f11919a6ffeded0a7d20702c05 [stream]
+[debug] [2021-08-05T11:49:19.274Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/ec94033df0e81e32a71e9fed0721fca091edf5fb76468f51a1f2e8904bd1b45d [none]
+[debug] [2021-08-05T11:49:19.274Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/ec94033df0e81e32a71e9fed0721fca091edf5fb76468f51a1f2e8904bd1b45d [stream]
+[debug] [2021-08-05T11:49:19.275Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/d0c288d8b9627b924787f075610bc6c6b5740b2267ab1f66ff56696001f78533 [none]
+[debug] [2021-08-05T11:49:19.275Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/d0c288d8b9627b924787f075610bc6c6b5740b2267ab1f66ff56696001f78533 [stream]
+[debug] [2021-08-05T11:49:19.275Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/960c6b61b38184bd3a0d87aa406c25bef73804c24387b6ebb1def6d73edac8d1 [none]
+[debug] [2021-08-05T11:49:19.276Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/960c6b61b38184bd3a0d87aa406c25bef73804c24387b6ebb1def6d73edac8d1 [stream]
+[debug] [2021-08-05T11:49:19.276Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/868a2b03ad98a1325dde080a45002d5705992dd1d8be1d7a3d5e554d95a5983d [none]
+[debug] [2021-08-05T11:49:19.276Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/868a2b03ad98a1325dde080a45002d5705992dd1d8be1d7a3d5e554d95a5983d [stream]
+[debug] [2021-08-05T11:49:19.277Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/908eb145feeb2fa771fc662fb187e45ccf36bc5441b80d8945ea065dfacdd704 [none]
+[debug] [2021-08-05T11:49:19.277Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/908eb145feeb2fa771fc662fb187e45ccf36bc5441b80d8945ea065dfacdd704 [stream]
+[debug] [2021-08-05T11:49:19.277Z] [hosting][populate queue][FINAL] {"max":2247,"min":2247,"avg":2247,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2251}
+[debug] [2021-08-05T11:49:19.277Z] [hosting] uploads queued: 7
+[debug] [2021-08-05T11:49:20.993Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/908eb145feeb2fa771fc662fb187e45ccf36bc5441b80d8945ea065dfacdd704 200
+[debug] [2021-08-05T11:49:20.994Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/908eb145feeb2fa771fc662fb187e45ccf36bc5441b80d8945ea065dfacdd704 [stream]
+[debug] [2021-08-05T11:49:20.994Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/ec94033df0e81e32a71e9fed0721fca091edf5fb76468f51a1f2e8904bd1b45d 200
+[debug] [2021-08-05T11:49:20.994Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/ec94033df0e81e32a71e9fed0721fca091edf5fb76468f51a1f2e8904bd1b45d [stream]
+[debug] [2021-08-05T11:49:20.995Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/868a2b03ad98a1325dde080a45002d5705992dd1d8be1d7a3d5e554d95a5983d 200
+[debug] [2021-08-05T11:49:20.995Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/868a2b03ad98a1325dde080a45002d5705992dd1d8be1d7a3d5e554d95a5983d [stream]
+[debug] [2021-08-05T11:49:21.049Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/8fc47a7358e1c58d5fbbe6acca39fdbc08db72f11919a6ffeded0a7d20702c05 200
+[debug] [2021-08-05T11:49:21.049Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/8fc47a7358e1c58d5fbbe6acca39fdbc08db72f11919a6ffeded0a7d20702c05 [stream]
+[debug] [2021-08-05T11:49:21.053Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/d0c288d8b9627b924787f075610bc6c6b5740b2267ab1f66ff56696001f78533 200
+[debug] [2021-08-05T11:49:21.053Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/d0c288d8b9627b924787f075610bc6c6b5740b2267ab1f66ff56696001f78533 [stream]
+[debug] [2021-08-05T11:49:21.100Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/960c6b61b38184bd3a0d87aa406c25bef73804c24387b6ebb1def6d73edac8d1 200
+[debug] [2021-08-05T11:49:21.100Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/960c6b61b38184bd3a0d87aa406c25bef73804c24387b6ebb1def6d73edac8d1 [stream]
+[debug] [2021-08-05T11:49:21.211Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/bcf7da9a11f318cc62297dbe2826230a690455da24b239b4b14966d02706d014 200
+[debug] [2021-08-05T11:49:21.211Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/meddoraa-movies/versions/b77416309656c72a/files/bcf7da9a11f318cc62297dbe2826230a690455da24b239b4b14966d02706d014 [stream]
+[debug] [2021-08-05T11:49:21.211Z] [hosting][upload queue][FINAL] {"max":1940,"min":1721,"avg":1784.4285714285713,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":1940}
+[info] ✔  hosting[meddoraa-movies]: file upload complete 
+[debug] [2021-08-05T11:49:21.212Z] [hosting] deploy completed after 4297ms
+[debug] [2021-08-05T11:49:21.214Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "meddoraa-movies"
+    },
+    "site": "meddoraa-movies",
+    "version": "sites/meddoraa-movies/versions/b77416309656c72a"
+  }
+]
+[info] i  hosting[meddoraa-movies]: finalizing version... 
+[debug] [2021-08-05T11:49:21.214Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-05T11:49:21.215Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-05T11:49:21.500Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Thu, 05 Aug 2021 11:49:21 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-05T11:49:21.547Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/meddoraa-movies/versions/b77416309656c72a?updateMask=status  
+ {"status":"FINALIZED"}
